@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: left;
+}
+
+h2 {
+  text-align: left;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"],
+button#copyButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+button#copyButton:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 150px !important; /* Ensure this property is applied */
+}
+
+.hidden {
+  display: none;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 90%;
+  overflow-x: none;
+  min-height: 250px !important; /* Ensure this property is applied */
+}
+
+.external-link {
+  color: blue; /* Change link color as desired */
+  text-decoration: none; /* Remove underline */
+}
+
+.external-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.external-link:visited {
+  color: blue; /* Set visited link color to the same as normal link color */
+}
+
+.btn_container {
+  text-align: center; /* Center-align content horizontally */
+}
+
+.centered-button {
+  /* Optionally, add styles for the button */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coolors to Tableau Colour Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coolors to Tableau Colour Converter</h1>
+      <p>Have you ever wanted to make appealing colour palettes in Tableau?  Coolors can help with the colours that you want and this website is a tool to quickly convert into a Tableau custom palette for you</p>
+    <h2>Step 1: Create your Coolors colours</h2>
+    <p>Go to <a href="https://coolors.co" target="_blank" class="external-link">coolors.co</a>, then click on 'Start the generator'
+ and choose the palette you like best.  You can 'lock' certain colours as you go through the process</p>
+    <p>When you've got the colours that you like best, click on Export and then URL and return here</p>
+    <h2>Step 2: Paste the link</h2>
+    <p>Paste the link and enter the name for the palette in Tableau</p>
+    <form id="colorForm">
+      <label for="colorInput">Coolors Palette Link:</label>
+      <input type="text" id="colorInput" placeholder="Enter color palette link">
+      <br>
+      <label for="paletteNameInput">Your palette name in Tableau</label>
+      <input type="text" id="paletteNameInput" placeholder="Enter palette name">
+    <h2 align="left">Step 3: Click the button to continue</h2>
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <div id="output" class="hidden">
+      <textarea id="formattedColors" readonly></textarea>
+      <h2 align="left">Step 4: Click the Copy button</h2>
+      <p>Clicking the button will copy the XML into your clipboard</butt></p>
+      <div class="btn_container">
+            <button id="copyButton" align="center">Copy to Clipboard</button>
+      </div>
+      <h2 align="left">Step 5: Edit your preferences.tps file</h2>
+      <p>OK, this is the penultimate step ...</p>
+      <p>Locate your preferences.tps file. The file is located at: <br />Documents\My Tableau Repository\Rreferences.tps
+      <p>Edit the file with Notepad (or any other text editor) and paste your palette definition in place </p>
+      <div style="background-color: #ffffcc; padding: 20px;">
+      <pre align="left">
+  &lt;?xml version='1.0'?&gt;
+  &lt;workbook&gt;
+  &lt;preferences&gt;
+
+      <span style="color: red;">PASTE YOUR PALETTE DEFINITION HERE</span>
+
+  &lt;/preferences&gt;
+  &lt;/workbook&gt;
+      </pre>
+        </div>
+      <p>Indentation doesn't matter, but it can make it easier to read</p>
+      <p>You might have other palettes already defined, in that case be careful where you paste</p>
+      <p>Save the file</p>
+      <h2>Step 6: Start Tableau Desktop and test</h2>
+      <p>Fire up Tableau Desktop and check out your new palette</p>
+<hr>
+      <h2>Feedback</h2>
+      <p>Please let me know what you think, and what other cool tools you would like to see for Tableau <a href="https://twitter.com/cmcau">Twitter/X</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
