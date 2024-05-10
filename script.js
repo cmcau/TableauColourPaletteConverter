@@ -6,6 +6,10 @@ document.getElementById("colorForm").addEventListener("submit", function(event) 
     return;
   }
   let input = document.getElementById("colorInput").value;
+  if (!input) {
+    alert("Please paste a URL to convert to your color palette.");
+    return;
+  }
   let colors = input.split("/").pop().split("-");
   let formattedColors = `<color-palette name="${paletteName}" type="regular">\n`;
   colors.forEach(function(color) {

@@ -8,3 +8,4 @@ Initial feedback was great, and there's some great ideas that I want to implemen
 
 This is also my first public repo, so be gentle if I don't know all the proper Github functionality.
 
+You can host this code yourself, or visit https://visualisedata.com.au/tableau_tools/coolor_converter/ to use the latest version for free at any time
