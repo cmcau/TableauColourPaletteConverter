@@ -33,23 +33,37 @@
     <form id="colorForm">
       <label for="colorInput">Palette Link:</label>
       <input type="text" id="colorInput" placeholder="Enter color palette link">
-      <br>
-      <label for="paletteNameInput">Your palette name in Tableau</label>
+        <p> </p>
+      <label for="paletteNameInput">What do you want to name the palette in Tableau</label>
       <input type="text" id="paletteNameInput" placeholder="Enter palette name">
     <h2 align="left">Step 3: Click the button to continue</h2>
       <button type="submit" id="submitButton">Submit</button>
     </form>
     <div id="output" class="hidden">
-      <textarea id="formattedColors" readonly></textarea>
-      <h2 align="left">Step 4: Click the Copy button</h2>
-      <p>Clicking the button will copy the XML into your clipboard</butt></p>
+      <h2 align="left">Step 4: Change your Preferences.tps file</h2>
+        <p>You have 2 choices ...</p>
+        <h3 align="left">Choice 1: Download your new Preferences.tps right now</h3>
+        <p>This will overwrite your existing preferences file, please be careful! You will loose your existing custom palette configurations.</p>
+      <div class="btn_container">
+            <button id="generateBtn">Download Preferences.tps</button>
+      </div>
+        <p>Once you've downloaded the file, move it to your Documents\My Tableau Repository\ folder and overwrite the existing file.</p>
+        <p>Remember that the filename must be preferences.tps for it to work.</p>
+<hr>
+        <h3 align="left">Choice 2: Edit your Preferences.tps manually</h3>
+        <p>This is the best option if you have other custom palettes defined in your preferences file.</p>
+<div align="center" width="50%">
+    <textarea id="formattedColors" readonly></textarea>
+</div>
+
+      <p>Clicking the button will copy the XML into your clipboard</p>
       <div class="btn_container">
             <button id="copyButton" align="center">Copy to Clipboard</button>
       </div>
       <h2 align="left">Step 5: Edit your preferences.tps file</h2>
       <p>OK, this is the penultimate step ...</p>
-      <p>Locate your preferences.tps file. The file is located at: <br />   Documents\My Tableau Repository\Rreferences.tps
-      <p>Edit the file with Notepad (or any other text editor) and paste your palette definition in place </p>
+      <p>Locate your preferences.tps file. The file is located at:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documents\My Tableau Repository\Preferences.tps
+      <p>Edit the file with Notepad (or any other text editor) and paste your palette definition in place.</p>
       <div style="background-color: #ffffcc; padding: 20px;">
       <pre align="left">
   &lt;?xml version='1.0'?&gt;
@@ -62,11 +76,13 @@
   &lt;/workbook&gt;
       </pre>
         </div>
-      <p>Indentation doesn't matter, but it can make it easier to read</p>
-      <p>You might have other palettes already defined, in that case be careful where you paste</p>
-      <p>Save the file</p>
+        <ul>
+      <li><p>Indentation doesn't matter, but it can make it easier to read</p></li>
+      <li><p>You might have other palettes already defined, in that case be careful where you paste the new palette code.</p></li>
+      <li><p>Save the file.</p></li>
+            </ul>
       <h2>Step 6: Start Tableau Desktop and test</h2>
-      <p>Fire up Tableau Desktop and check out your new palette</p>
+      <p>Start Tableau Desktop and check out your new palette</p>
 <hr>
       <h2>Feedback</h2>
       <p>Please let me know what you think, and what other cool tools you would like to see for Tableau <a href="https://twitter.com/cmcau">Twitter/X</a></p>
