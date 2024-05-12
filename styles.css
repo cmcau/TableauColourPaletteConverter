@@ -96,3 +96,12 @@ textarea {
 .centered-button {
   /* Optionally, add styles for the button */
 }
+
+.hanging-indent {
+  list-style-type: none;
+  padding-left: 1em; /* Set the overall indentation */
+}
+
+.hanging-indent li {
+  text-indent: -1em; /* Set the negative indentation for the list items */
+}
